@@ -7,6 +7,16 @@ body {
     background-color: #333333;
     color: #EEEEEE;
 
+    #background-container,
+    canvas,
+    #foreground-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
     nav {
       float: left;
       a {
