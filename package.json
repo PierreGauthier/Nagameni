@@ -4,8 +4,7 @@
   "description": "Enigma Test",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "start": "live-server"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
   },
   "devDependencies": {
     "live-server": "^0.8.2",
+    "node-sass": "^3.4.2",
     "typescript": "^1.6.2"
   }
 }
