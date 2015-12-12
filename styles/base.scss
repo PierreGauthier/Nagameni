@@ -17,19 +17,12 @@ body {
         overflow: hidden;
     }
 
-    nav {
-      float: left;
-      a {
-        color: #EEEEEE;
-        text-decoration: none;
-        &:hover { text-decoration: underline; }
-      }
-    }
+    nav {display: hidden;}
 
     main {
       text-align: center;
       width: 80%;
-      margin: 0 10%;
+      margin: 0 0;
     }
 
 }

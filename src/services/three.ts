@@ -10,8 +10,6 @@ export class Three {
 	static camera   : THREE.PerspectiveCamera;
 
 	constructor() {
-		console.log('salut');
-
 		Three.renderer = new THREE.WebGLRenderer({ alpha: true });
 		Three.camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.1, 1000 );
 		Three.scene = new THREE.Scene();
@@ -19,25 +17,12 @@ export class Three {
 		Three.renderer.setSize( window.innerWidth, window.innerHeight);
 		document.body.appendChild( Three.renderer.domElement );
 
-		var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-		var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-		var _3_cube = new THREE.Mesh( geometry, material );
-
-		this.addToScene(_3_cube);
-		Three.camera.position.z = 5;
-
-		var prerender = function () {
-			requestAnimationFrame( prerender );
-			_3_cube.rotation.x += 0.01;
-			_3_cube.rotation.y += 0.01;
-		};
-
-		prerender();
+		Three.camera.position.z = 3;
 
 		Three.render();
 	}
 
-	public addToScene (element) {
+	static addToScene (element) {
 		Three.scene.add(element);
 	}
 
