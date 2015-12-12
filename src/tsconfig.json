@@ -22,8 +22,10 @@
     ],
     "files": [
         "app.ts",
-        "enigmas/0/enigma.ts",
-        "enigmas/EnigmaManager.ts"
+        "enigmas/0/ColdCase.ts",
+        "enigmas/EnigmaManager.ts",
+        "services/three.d.ts",
+        "services/three.ts"
     ],
     "atom": {
         "rewriteTsconfig": true

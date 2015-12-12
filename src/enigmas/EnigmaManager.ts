@@ -1,7 +1,7 @@
 import { Component, View } from 'angular2/angular2';
 import { RouteConfig, RouterLink, RouterOutlet, RouteParams } from 'angular2/router';
 
-import { Enigma_0 } from './0/enigma';
+import { Enigma_0 } from './0/ColdCase';
 
 @Component({
 	selector: 'nagameni'
