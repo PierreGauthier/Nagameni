@@ -1,0 +1,25 @@
+/*
+    Main Style
+*/
+
+body {
+
+    background-color: #333333;
+    color: #EEEEEE;
+
+    nav {
+      float: left;
+      a {
+        color: #EEEEEE;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+
+    main {
+      text-align: center;
+      width: 80%;
+      margin: 0 10%;
+    }
+
+}
