@@ -35,8 +35,8 @@ export class Enigma_0 {
 
 		var e0_animation = function () {
 			requestAnimationFrame( e0_animation );
-			_3_cube.rotation.x += (cursorPos.y/Math.abs(cursorPos.y)) * Math.log(Math.abs(cursorPos.y)) / 250;
-			_3_cube.rotation.y += (cursorPos.x/Math.abs(cursorPos.x)) * Math.log(Math.abs(cursorPos.x)) / 250;
+			_3_cube.rotation.x = (cursorPos.y/Math.abs(cursorPos.y)) * Math.abs(cursorPos.y) / 500;
+			_3_cube.rotation.y = (cursorPos.x/Math.abs(cursorPos.x)) * Math.abs(cursorPos.x) / 500;
 
 			_3_cube.rotation.x = (isNaN(_3_cube.rotation.x) ? 0 : _3_cube.rotation.x);
 			_3_cube.rotation.y = (isNaN(_3_cube.rotation.y) ? 0 : _3_cube.rotation.y);
