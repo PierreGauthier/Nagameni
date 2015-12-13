@@ -10,14 +10,14 @@ export class Three {
 	static camera   : THREE.PerspectiveCamera;
 
 	constructor() {
-		Three.renderer = new THREE.WebGLRenderer({ alpha: true });
-		Three.camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.1, 1000 );
+		Three.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+		Three.camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.01, 10000 );
 		Three.scene = new THREE.Scene();
 
 		Three.renderer.setSize( window.innerWidth, window.innerHeight);
-		document.body.appendChild( Three.renderer.domElement );
+		document.body.insertBefore( Three.renderer.domElement, document.getElementById('nagameni') );
 
-		Three.camera.position.z = 3;
+		Three.camera.position.z = 10;
 
 		Three.render();
 	}
