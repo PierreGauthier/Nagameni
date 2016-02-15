@@ -1,7 +1,7 @@
 import { Component, View } from 'angular2/angular2';
 import { RouteConfig, RouterLink, RouterOutlet, RouteParams } from 'angular2/router';
 
-import { Enigma_Test } from './0/ColdCase';
+import { Enigma_Test } from './test/ColdCase';
 import { Enigma_0 } from './0/Square';
 
 @Component({

@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "commonjs",
+        "module": "system",
         "moduleResolution": "node",
         "isolatedModules": false,
         "jsx": "react",
@@ -22,8 +22,9 @@
     ],
     "files": [
         "app.ts",
-        "enigmas/0/ColdCase.ts",
+        "enigmas/0/Square.ts",
         "enigmas/EnigmaManager.ts",
+        "enigmas/test/ColdCase.ts",
         "services/three.d.ts",
         "services/three.ts"
     ],

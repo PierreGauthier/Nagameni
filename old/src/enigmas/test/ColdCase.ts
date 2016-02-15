@@ -9,10 +9,10 @@ import { Three } from '../../services/three';
 })
 @View({
 	directives: [NgFor, RouterLink],
-	templateUrl: '/src/enigmas/0/templates/landing.html'
+	templateUrl: '/src/enigmas/test/templates/landing.html'
 })
 
-export class Enigma_0 {
+export class Enigma_Test {
 
 	constructor(threeService: Three) {
 		var geometry = new THREE.BoxGeometry( 1, 1, 1 );
